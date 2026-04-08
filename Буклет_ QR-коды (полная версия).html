@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/Murfi/Downloads/deepseek_html_20260405_c6d376.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Буклет: QR-коды (полная версия)</title>
+    <style>
+        @media print {
+            body { margin: 0; padding: 0; background: white; }
+            .page { margin: 0; padding: 0; box-shadow: none; }
+        }
+        * { box-sizing: border-box; }
+        body {
+            background: #e0e0e0;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .page { display: flex; flex-wrap: wrap; width: 100%; }
+        .half {
+            width: 50%;
+            padding: 20px 25px;
+            background: white;
+            border: 1px solid #ddd;
+            min-height: 350px;
+        }
+        .cover {
+            background: linear-gradient(135deg, #0b2b44 0%, #1e5a8a 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .cover h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .cover h2 { font-size: 1.3rem; font-weight: normal; }
+        .qr-large {
+            width: 180px;
+            height: 180px;
+            background: white;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            padding: 8px;
+        }
+        .qr-large img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+        }
+        .footer { margin-top: 30px; font-size: 0.8rem; opacity: 0.8; }
+        .back-cover { background: #f4f7fb; }
+        h3 { color: #1e5a8a; border-bottom: 2px solid #1e5a8a; display: inline-block; margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+        td, th { border: 1px solid #ccc; padding: 8px; vertical-align: top; }
+        th { background: #eef4ff; }
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 8px 12px;
+            margin: 15px 0;
+            font-size: 0.85rem;
+        }
+        .qr-placeholder {
+            background: #f0f0f0;
+            border: 1px dashed #888;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        @media (max-width: 700px) {
+            .half { width: 100%; }
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+<div class="container">
+    <div class="page">
+        <div class="half cover">
+            <h1>QR-коды</h1>
+            <h2>просто о сложном</h2>
+            <div class="qr-large">
+                <img src="qr.png" alt="Мой QR-код">
+            </div>
+            <div class="footer">
+                Создание • Применение • Безопасность<br>
+                Исследовательский проект
+            </div>
+        </div>
+        <div class="half">
+            <h3>Что такое QR-код?</h3>
+            <p><strong>QR</strong> – Quick Response (быстрый отклик). Двумерный штрихкод, изобретён в 1994 году компанией <strong>Denso Wave</strong>.</p>
+            <p><strong>Почему лучше обычного штрихкода?</strong></p>
+            <ul>
+                <li>Хранит данные по горизонтали и вертикали → больше информации (до 4296 символов).</li>
+                <li>Исправляет ошибки (до 30% повреждений).</li>
+                <li>Считывается даже с экрана телефона.</li>
+            </ul>
+            <h3>Структура QR-кода</h3>
+            <div class="qr-placeholder" style="background: #f8f9fa; border-left: 4px solid #1e5a8a; font-family: inherit;">
+                <strong>🔍 Основные зоны QR-кода:</strong>
+                <ul style="margin: 8px 0 0 20px; padding: 0; font-size: 0.85rem;">
+                    <li><strong>Три угловых квадрата</strong> — позиционные маркеры (определяют положение и поворот).</li>
+                    <li><strong>Синхронизирующие полосы</strong> — чередующиеся модули между углами (задают масштаб).</li>
+                    <li><strong>Выравнивающий маркер</strong> — маленькие квадраты для больших версий (компенсация искажений).</li>
+                    <li><strong>Область формата</strong> — уровень коррекции ошибок и маска.</li>
+                    <li><strong>Область данных</strong> — сама закодированная информация.</li>
+                    <li><strong>Область коррекции ошибок</strong> — восстановление до 30% повреждений.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="half">
+            <h3>Как создать QR-код? (без программирования)</h3>
+            <table>
+                <tbody><tr><th>Способ</th><th>Действие</th></tr>
+                <tr><td>🌐 Сайты</td><td>qr-code-generator.com, goqr.me</td></tr>
+                <tr><td>🧭 Браузеры</td><td>ПКМ на странице → «Создать QR-код» (Chrome, Edge)</td></tr>
+                <tr><td>📱 Мобильные приложения</td><td>«QR Code Reader» + генератор</td></tr>
+                <tr><td>📁 Офис</td><td>Excel/Word 365: Вставка → QR-код</td></tr>
+            </tbody></table>
+            <p><strong>Что можно закодировать?</strong> Текст, ссылку, Wi-Fi (с паролем), контакт vCard, геолокацию, email, SMS.</p>
+            <!-- НОВЫЙ БЛОК вместо примера QR-кода и совета -->
+            <div class="qr-placeholder" style="background: #eef2fa; border-left: 4px solid #1e5a8a;">
+                <strong>📊 Уровни коррекции ошибок (выбери свой):</strong>
+                <ul style="margin: 8px 0 0 20px; padding: 0;">
+                    <li><strong>L (Low)</strong> – 7% восстановления, для чистых кодов</li>
+                    <li><strong>M (Medium)</strong> – 15%, стандарт (по умолчанию)</li>
+                    <li><strong>Q (Quartile)</strong> – 25%, для умеренных повреждений</li>
+                    <li><strong>H (High)</strong> – 30%, если код будет грязным или с логотипом</li>
+                </ul>
+                <strong>📏 Размер имеет значение:</strong> чем больше данных, тем выше версия (1–40). Для 100 символов хватит версии 2 (25×25 модулей).
+            </div>
+            <p><small>💡 При создании через генератор всегда выбирайте уровень <strong>H</strong> – надёжнее.</small></p>
+        </div>
+        <div class="half back-cover">
+            <h3>Как проверить надёжность?</h3>
+            <ul>
+                <li><strong>Сканируйте сами</strong> – проверьте на 2-3 телефонах.</li>
+                <li><strong>Тест повреждений:</strong> заклейте 10–20% кода – считывается? Значит, высокая коррекция ошибок.</li>
+                <li><strong>Размер печати:</strong> минимум 2×2 см, лучше 3×3 см.</li>
+            </ul>
+            <h3>Правила безопасности</h3>
+            <div class="warning">
+                ⚠️ <strong>НЕ сканируйте</strong> коды с подозрительных листовок, писем, наклеек на столбах.<br>
+                ⚠️ <strong>НЕ вводите</strong> пароли, логины, банковские данные после сканирования.<br>
+                ✅ Используйте приложение с предпросмотром ссылки (Kaspersky QR Scanner, Bitdefender).
+            </div>
+            <div style="margin-top: 20px; background: #e9ecef; padding: 10px; border-radius: 8px;">
+                <strong>📌 Короткая памятка</strong><br>
+                • Создать → любой генератор<br>
+                • Проверить → просканировать самому<br>
+                • Применять → учёба, контакты, Wi-Fi<br>
+                • Безопасность → доверяй, но проверяй!
+            </div>
+            <div class="footer" style="margin-top: 20px; font-size: 0.7rem; text-align: center;">
+                © Исследовательский проект «QR-коды: создание и применение»
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>
